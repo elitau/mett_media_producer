@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive destination="" exploded="false" name="mmonster_webfrontend.war" used="true">
+<folder excludes="" includes="**/*.class" location="bin" name="bin" prefix="WEB-INF/classes" project="" projectLocation="bin" used="true"/>
+<file location="bin/WEB-INF/web.xml" name="web.xml" prefix="WEB-INF" project="" projectLocation="bin/WEB-INF/web.xml" used="true"/>
+<file location="bin/WEB-INF/jboss-web.xml" name="jboss-web.xml" prefix="WEB-INF" project="" projectLocation="bin/WEB-INF/jboss-web.xml" used="true"/>
+<folder excludes="" includes="" location="docroot" name="docroot" prefix="" project="" projectLocation="docroot" used="true"/>
+</archive>
+</configurations>

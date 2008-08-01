@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<section>
+  <title>multimonster.converter.plugin.jmx.TCProbeCaller</title>
+  <subtitle>Default ObjectName: multimonster:service=TCProbeCaller</subtitle>
+    <para>(no description)</para>
+    <table>
+      <title>Descriptors</title>
+      <tgroup cols="3">
+        <colspec colname="descriptor"/>
+        <colspec colname="value"/>
+        <thead>
+          <row>
+            <entry>Descriptor</entry>
+            <entry>Value</entry>
+          </row>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </tgroup>
+    </table>
+
+  <section>
+    <title>Managed Constructors</title>
+
+  </section>
+
+  <!--attributes-->
+    <section>
+      <title>Managed Attributes</title>
+    <table>
+      <!--title></title-->
+      <tgroup cols="3">
+        <colspec colname="attribute"/>
+        <colspec colname="type"/>
+        <colspec colname="access"/>
+        <colspec colname="description" align="center"/>
+        <thead>
+          <row>
+            <entry>Attribute</entry>
+            <entry>Type</entry>
+            <entry>Access</entry>
+            <entry align="center">Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>TCPROBE_ARGS</entry>
+            <entry>java.lang.String</entry>
+            <entry>read-write</entry>
+            <entry>(no description)</entry>
+          </row>
+          <row>
+            <entry>TCPROBE_PATH</entry>
+            <entry>java.lang.String</entry>
+            <entry>read-write</entry>
+            <entry>(no description)</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+
+  </section>
+
+<!--operations -->
+    <section>
+      <title>Managed Operations</title>
+      <formalpara>
+        <title>returnThis</title>
+        <para>(no description)
+          <orderedlist>
+            <listitem>
+              <para>return type: multimonster.converter.plugin.jmx.TCProbeCaller</para>
+            </listitem>
+          </orderedlist>
+        </para>
+
+    </formalpara>
+  </section>
+
+<!--notifications -->
+    <section>
+      <title>Notifications</title>
+    <table>
+      <!--title></title-->
+      <tgroup cols="3">
+        <colspec colname="name"/>
+        <colspec colname="type"/>
+        <colspec colname="description" align="center"/>
+        <thead>
+          <row>
+            <entry>Name</entry>
+            <entry>Type</entry>
+            <entry align="center">Description</entry>
+          </row>
+        </thead>
+        <tbody>
+        </tbody>
+      </tgroup>
+    </table>
+
+    </section>
+
+</section>
+

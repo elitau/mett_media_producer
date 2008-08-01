@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Packaging Generator" default="_packaging_generation_">
+<target name="_packaging_generation_" depends="N65540"/>
+<target name="N65540" description="mmonster_webfrontend.war">
+<jar destfile="mmonster_webfrontend.war">
+<zipfileset dir="bin/WEB-INF" prefix="WEB-INF">
+<include name="web.xml"/>
+</zipfileset>
+<zipfileset dir="bin/WEB-INF" prefix="WEB-INF">
+<include name="jboss-web.xml"/>
+</zipfileset>
+<zipfileset dir="bin" prefix="WEB-INF/classes" includes="**/*.class"/>
+<zipfileset dir="docroot"/>
+</jar>
+</target>
+</project>

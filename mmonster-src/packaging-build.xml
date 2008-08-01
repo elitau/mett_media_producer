@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Packaging Generator" default="_packaging_generation_">
+<target name="_packaging_generation_" depends="N65540,N65567,N65584,N65631,N65648,N65685,N65722,N65769,N65816,N65863,N65910,N65957,N66004,N66021"/>
+<target name="N65540" description="mmonster_common.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_common.jar">
+<zipfileset dir="bin" includes="multimonster/common/**/*.class"/>
+<zipfileset dir="bin/multimonster/common/META-INF" prefix="META-INF"/>
+</jar>
+</target>
+<target name="N65567" description="mmonster_exceptions.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_exceptions.jar">
+<zipfileset dir="bin" includes="**/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65584" description="mmonster_edit.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_edit.jar">
+<zipfileset dir="bin/multimonster/edit" prefix="multimonster/edit" includes="*.class"/>
+<zipfileset dir="bin/multimonster/edit/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/edit/interfaces" prefix="multimonster/edit/interfaces"/>
+<zipfileset dir="bin" includes="**/edit/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65631" description="mmonster_interfaces.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_interfaces.jar">
+<zipfileset dir="bin" includes="**/interfaces/*.class"/>
+</jar>
+</target>
+<target name="N65648" description="mmonster_converter.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_converter.jar">
+<zipfileset dir="bin/multimonster/converter" prefix="multimonster/converter" includes="*.class" excludes="**/jmx/**/*.class"/>
+<zipfileset dir="bin/multimonster/converter/META-INF" prefix="META-INF" excludes="jboss-service.xml"/>
+<zipfileset dir="bin/multimonster/converter/interfaces" prefix="multimonster/converter/interfaces"/>
+</jar>
+</target>
+<target name="N65685" description="mmonster_resourcemanager.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_resourcemanager.jar">
+<zipfileset dir="bin/multimonster/resourcemanager" prefix="multimonster/resourcemanager" includes="*.class"/>
+<zipfileset dir="bin/multimonster/resourcemanager/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/resourcemanager/interfaces" prefix="multimonster/resourcemanager/interfaces"/>
+</jar>
+</target>
+<target name="N65722" description="mmonster_systemadministration.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_systemadministration.jar">
+<zipfileset dir="bin/multimonster/systemadministration" prefix="multimonster/systemadministration" includes="*.class"/>
+<zipfileset dir="bin/multimonster/systemadministration/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/systemadministration/interfaces" prefix="multimonster/systemadministration/interfaces"/>
+<zipfileset dir="bin" includes="**/systemadministration/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65769" description="mmonster_transporter.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_transporter.jar">
+<zipfileset dir="bin/multimonster/transporter" prefix="multimonster/transporter" includes="*.class"/>
+<zipfileset dir="bin/multimonster/transporter/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/transporter/interfaces" prefix="multimonster/transporter/interfaces"/>
+<zipfileset dir="bin" includes="**/transporter/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65816" description="mmonster_mediaproxy.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_mediaproxy.jar">
+<zipfileset dir="bin/multimonster/mediaproxy" prefix="multimonster/mediaproxy" includes="*.class"/>
+<zipfileset dir="bin/multimonster/mediaproxy/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/mediaproxy/interfaces" prefix="multimonster/mediaproxy/interfaces"/>
+<zipfileset dir="bin" includes="**/mediaproxy/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65863" description="mmonster_mediaaccess.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_mediaaccess.jar">
+<zipfileset dir="bin/multimonster/mediaaccess" prefix="multimonster/mediaaccess" includes="*.class"/>
+<zipfileset dir="bin/multimonster/mediaaccess/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/mediaaccess/interfaces" prefix="multimonster/mediaaccess/interfaces"/>
+<zipfileset dir="bin" includes="**/mediadata/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65910" description="mmonster_usermanager.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_usermanager.jar">
+<zipfileset dir="bin/multimonster/usermanager" prefix="multimonster/usermanager" includes="*.class"/>
+<zipfileset dir="bin/multimonster/usermanager/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/usermanager/interfaces" prefix="multimonster/usermanager/interfaces"/>
+<zipfileset dir="bin" includes="**/usermanager/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N65957" description="mmonster_controller.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_controller.jar">
+<zipfileset dir="bin/multimonster/controller" prefix="multimonster/controller" includes="*.class"/>
+<zipfileset dir="bin/multimonster/controller/META-INF" prefix="META-INF"/>
+<zipfileset dir="bin/multimonster/controller/interfaces" prefix="multimonster/controller/interfaces"/>
+<zipfileset dir="bin" includes="**/controller/exceptions/*.class"/>
+</jar>
+</target>
+<target name="N66004" description="mmonster_plugins.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_plugins.jar">
+<zipfileset dir="bin" includes="**/plugin/*.class"/>
+</jar>
+</target>
+<target name="N66021" description="mmonster.ear">
+<jar destfile="mmonster.ear">
+<zipfileset dir="lib">
+<include name="mmonster_common.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_controller.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_converter.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_edit.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_exceptions.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_mediaaccess.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_mediaproxy.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_plugins.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_resourcemanager.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_systemadministration.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_transporter.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_usermanager.jar"/>
+</zipfileset>
+<zipfileset dir="." prefix="META-INF">
+<include name="application.xml"/>
+</zipfileset>
+<zipfileset dir="../mmonster-webfrontend">
+<include name="mmonster_webfrontend.war"/>
+</zipfileset>
+</jar>
+</target>
+</project>

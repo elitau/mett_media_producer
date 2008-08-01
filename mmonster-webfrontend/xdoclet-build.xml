@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="XDoclet Generator" default="_xdoclet_generation_">
+<property file="xdoclet-build.properties"/>
+<property name="eclipse.home" value="/Applications/eclipse-j2ee"/>
+<property name="xdoclet.basedir" value="${eclipse.home}/plugins/org.jboss.ide.eclipse.xdoclet.core_2.0.0.GA"/>
+<property name="jboss.net.version" value="4.0"/>
+<path id="project.classpath"><pathelement location="bin"/>
+<pathelement location="3rdparty_lib/javax.servlet.jar"/>
+<pathelement location="3rdparty_lib/jboss-j2ee.jar"/>
+<pathelement location="3rdparty_lib/log4j.jar"/>
+<pathelement location="../mmonster-src/bin"/>
+<pathelement location="../mmonster-src/3rdparty_lib/jboss-j2ee.jar"/>
+<pathelement location="../mmonster-src/3rdparty_lib/log4j.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/ejb-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/jacc-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/jca-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/jms-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/jsp-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/jta-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/servlet-api.jar"/>
+<pathelement location="${eclipse.home}/plugins/org.jboss.ide.eclipse.jdt.j2ee.core_2.1.0.GA/lib/j2ee-1.4/sql-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/ejb-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/jacc-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/jca-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/jms-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/jsp-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/jta-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/servlet-api.jar"/>
+<pathelement location="${eclipse.home}/configuration/org.eclipse.osgi/bundles/544/1/.cp/lib/j2ee-1.4/sql-api.jar"/>
+</path>
+<path id="xdoclet.classpath">
+<path refid="project.classpath"/>
+<fileset dir="${xdoclet.basedir}">
+<include name="*.jar"/>
+<exclude name="xdoclet-module-jboss-net-*.jar"/>
+</fileset>
+<fileset dir="${xdoclet.basedir}">
+<include name="xdoclet-module-jboss-net-${jboss.net.version}*.jar"/>
+</fileset>
+</path>
+<target name="_xdoclet_generation_" depends="N65540"/>
+<target name="N65540" description="web">
+<taskdef name="webdoclet" classname="xdoclet.modules.web.WebDocletTask" classpathref="xdoclet.classpath"/><webdoclet destDir="bin/WEB-INF" >
+
+
+
+
+
+
+<fileset dir="src"  includes="**/*.java" >
+
+
+
+</fileset>
+<jbosswebxml Version="3.0" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</jbosswebxml>
+<deploymentdescriptor Servletspec="2.3" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</deploymentdescriptor>
+</webdoclet></target>
+</project>

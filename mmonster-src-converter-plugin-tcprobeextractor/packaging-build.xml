@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Packaging Generator" default="_packaging_generation_">
+<target name="_packaging_generation_" depends="N65540,N65557,N65582"/>
+<target name="N65540" description="mmonster_converter_plugin_tcprobeextractor.jar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_converter_plugin_tcprobeextractor.jar">
+<zipfileset dir="bin" includes="**/*.class" excludes="**/jmx/*.class"/>
+</jar>
+</target>
+<target name="N65557" description="mmonster_converter_plugin_tcprobeextractor.sar">
+<mkdir dir="lib"/>
+<jar destfile="lib/mmonster_converter_plugin_tcprobeextractor.sar">
+<zipfileset dir="bin/META-INF" prefix="META-INF">
+<include name="jboss-service.xml"/>
+</zipfileset>
+<zipfileset dir="bin" includes="**/jmx/*.class"/>
+</jar>
+</target>
+<target name="N65582" description="mmonster_converter_plugin_tcprobeextractor.ear">
+<jar destfile="mmonster_converter_plugin_tcprobeextractor.ear">
+<zipfileset dir="lib">
+<include name="mmonster_converter_plugin_tcprobeextractor.jar"/>
+</zipfileset>
+<zipfileset dir="lib">
+<include name="mmonster_converter_plugin_tcprobeextractor.sar"/>
+</zipfileset>
+<zipfileset dir="3rdparty_lib">
+<include name="ledatastream15.jar"/>
+</zipfileset>
+<zipfileset dir="." prefix="META-INF">
+<include name="application.xml"/>
+</zipfileset>
+</jar>
+</target>
+</project>

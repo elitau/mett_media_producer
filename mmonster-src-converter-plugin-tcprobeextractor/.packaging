@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive name="mmonster_converter_plugin_tcprobeextractor.jar" destination="lib" used="true" exploded="false">
+<folder prefix="" includes="**/*.class" excludes="**/jmx/*.class" project="" projectLocation="bin" name="bin" location="bin" used="true"/>
+</archive>
+<archive name="mmonster_converter_plugin_tcprobeextractor.sar" destination="lib" used="true" exploded="false">
+<folder prefix="" includes="**/jmx/*.class" excludes="" project="" projectLocation="bin" name="bin" location="bin" used="true"/>
+<file prefix="META-INF" project="" projectLocation="bin/META-INF/jboss-service.xml" name="jboss-service.xml" location="bin/META-INF/jboss-service.xml" used="true"/>
+</archive>
+<archive name="mmonster_converter_plugin_tcprobeextractor.ear" destination="" used="true" exploded="false">
+<file prefix="" project="" projectLocation="lib/mmonster_converter_plugin_tcprobeextractor.jar" name="mmonster_converter_plugin_tcprobeextractor.jar" location="lib/mmonster_converter_plugin_tcprobeextractor.jar" used="true"/>
+<file prefix="" project="" projectLocation="lib/mmonster_converter_plugin_tcprobeextractor.sar" name="mmonster_converter_plugin_tcprobeextractor.sar" location="lib/mmonster_converter_plugin_tcprobeextractor.sar" used="true"/>
+<file prefix="" project="" projectLocation="3rdparty_lib/ledatastream15.jar" name="ledatastream15.jar" location="3rdparty_lib/ledatastream15.jar" used="true"/>
+<file prefix="META-INF" project="" projectLocation="application.xml" name="application.xml" location="application.xml" used="true"/>
+</archive>
+</configurations>

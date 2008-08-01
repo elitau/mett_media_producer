@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application
+1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd">
+<application>
+	<display-name>MultiMonster</display-name>
+	<module>
+		<ejb>mmonster_common.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_exceptions.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_plugins.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_mediaaccess.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_usermanager.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_systemadministration.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_converter.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_resourcemanager.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_edit.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_transporter.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_controller.jar</ejb>
+	</module>
+	<module>
+		<ejb>mmonster_mediaproxy.jar</ejb>
+	</module>
+	<module>
+		<web>
+			<web-uri>mmonster_webfrontend.war</web-uri>
+			<context-root>/mmonster_webfrontend</context-root>
+		</web>
+	</module>
+</application>

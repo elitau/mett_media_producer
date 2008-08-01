@@ -1,0 +1,11 @@
+body  { background-color:#8AB9E1; font-family:Verdana,Courier,monospace;}
+body.head {background-color:#FFF7CC;}
+h1 {font-variant:normal; font-weight:bold; font-size:24px; color:#000000;}
+h2 {font-variant:normal; font-weight:bold; font-size:22px; color:#000000;}
+p {font-size:18px; color:#000000;}
+a {font-size:18px; color:#000000;}
+a.menu {font-size:16px;font-weight:bold; color:#000000;}
+a:link { text-decoration:none; }
+a:visited { text-decoration:none; }
+a:hover { text-decoration:underline; }
+a:active { text-decoration:underline; }

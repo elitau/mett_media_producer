@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<configuration name="edit" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/edit/**/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/edit/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/edit/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="edit"/>
+<attribute name="substituteWith" used="true" value="edit.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="converter" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/converter/**/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/converter/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/converter/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="converter"/>
+<attribute name="substituteWith" used="true" value="converter.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="resourcemanager" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/resourcemanager/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/resourcemanager/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/resourcemanager/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="resourcemanager"/>
+<attribute name="substituteWith" used="true" value="resourcemanager.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="systemadministration" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/systemadministration/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/systemadministration/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/systemadministration/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="systemadministration"/>
+<attribute name="substituteWith" used="true" value="systemadministration.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="transporter" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/transporter/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/transporter/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/transporter/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="transporter"/>
+<attribute name="substituteWith" used="true" value="transporter.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="usermanager" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/usermanager/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/usermanager/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/usermanager/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="usermanager"/>
+<attribute name="substituteWith" used="true" value="usermanager.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="mediaproxy" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/mediaproxy/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/mediaproxy/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/mediaproxy/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="mediaproxy"/>
+<attribute name="substituteWith" used="true" value="mediaproxy.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="mediaaccess" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/mediaaccess/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/mediaaccess/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/mediaaccess/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="mediaaccess"/>
+<attribute name="substituteWith" used="true" value="mediaaccess.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="controller" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/controller/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/controller/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/controller/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="packageSubstitution" used="true">
+<attribute name="packages" used="true" value="controller"/>
+<attribute name="substituteWith" used="true" value="controller.interfaces"/>
+</element>
+</task>
+</configuration>
+<configuration name="common" used="true">
+<task className="xdoclet.modules.ejb.EjbDocletTask" name="ejbdoclet" used="true">
+<attribute name="ejbSpec" used="true" value="2.0"/>
+<attribute name="ejbClassNameSuffix" used="false" value=""/>
+<attribute name="excludedTags" used="false" value=""/>
+<attribute name="destDir" used="true" value="codegen"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="force" used="false" value=""/>
+<attribute name="verbose" used="false" value=""/>
+<attribute name="addedTags" used="false" value=""/>
+<element name="deploymentdescriptor" used="true">
+<attribute name="smallicon" used="false" value=""/>
+<attribute name="largeicon" used="false" value=""/>
+<attribute name="displayname" used="false" value=""/>
+<attribute name="description" used="false" value=""/>
+<attribute name="clientjar" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/common/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="fileset" used="true">
+<attribute name="dir" used="true" value="src"/>
+<attribute name="includes" used="true" value="**/common/**/*Bean.java"/>
+<attribute name="excludes" used="false" value=""/>
+</element>
+<element name="homeinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="jboss" used="true">
+<attribute name="jbossTemplateFile" used="false" value=""/>
+<attribute name="jawsTemplateFile" used="false" value=""/>
+<attribute name="jbosscmpTemplateFile" used="false" value=""/>
+<attribute name="debug" used="false" value=""/>
+<attribute name="Version" used="false" value=""/>
+<attribute name="securityDomain" used="false" value=""/>
+<attribute name="unauthenticatedPrincipal" used="false" value=""/>
+<attribute name="datasource" used="false" value=""/>
+<attribute name="datasourceMapping" used="false" value=""/>
+<attribute name="typemapping" used="false" value=""/>
+<attribute name="generateRelations" used="false" value=""/>
+<attribute name="preferredRelationMapping" used="false" value=""/>
+<attribute name="createTable" used="false" value=""/>
+<attribute name="removeTable" used="false" value=""/>
+<attribute name="useIds" used="false" value=""/>
+<attribute name="xmlencoding" used="false" value=""/>
+<attribute name="schema" used="false" value=""/>
+<attribute name="validateXML" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="true" value="bin/multimonster/common/META-INF"/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+<element name="remoteinterface" used="true">
+<attribute name="pattern" used="false" value=""/>
+<attribute name="acceptInterfaces" used="false" value=""/>
+<attribute name="acceptAbstractClasses" used="false" value=""/>
+<attribute name="packageSubstitutions" used="false" value=""/>
+<attribute name="packageSubstitutionInheritanceSupported" used="false" value=""/>
+<attribute name="subTaskClassName" used="false" value=""/>
+<attribute name="prefixWithPackageStructure" used="false" value=""/>
+<attribute name="destinationFile" used="false" value=""/>
+<attribute name="templateURL" used="false" value=""/>
+<attribute name="templateFile" used="false" value=""/>
+<attribute name="Extent" used="false" value=""/>
+<attribute name="havingClassTag" used="false" value=""/>
+<attribute name="ofType" used="false" value=""/>
+<attribute name="subTaskName" used="false" value=""/>
+<attribute name="destDir" used="false" value=""/>
+<attribute name="mergeDir" used="false" value=""/>
+<attribute name="currentMethodTag" used="false" value=""/>
+<attribute name="currentClassTag" used="false" value=""/>
+<attribute name="currentFieldTag" used="false" value=""/>
+<attribute name="currentPackage" used="false" value=""/>
+<attribute name="currentMethod" used="false" value=""/>
+<attribute name="currentConstructor" used="false" value=""/>
+<attribute name="currentField" used="false" value=""/>
+<attribute name="currentClass" used="false" value=""/>
+</element>
+</task>
+</configuration>
+</configurations>

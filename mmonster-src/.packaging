@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive destination="lib" exploded="false" name="mmonster_common.jar" used="true">
+<folder excludes="" includes="multimonster/common/**/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/common/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/common/META-INF" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_exceptions.jar" used="true">
+<folder excludes="" includes="**/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_edit.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/edit" name="edit" prefix="multimonster/edit" project="" projectLocation="bin/multimonster/edit" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/edit/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/edit/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/edit/interfaces" name="interfaces" prefix="multimonster/edit/interfaces" project="" projectLocation="bin/multimonster/edit/interfaces" used="true"/>
+<folder excludes="" includes="**/edit/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_interfaces.jar" used="true">
+<folder excludes="" includes="**/interfaces/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_converter.jar" used="true">
+<folder excludes="**/jmx/**/*.class" includes="*.class" location="bin/multimonster/converter" name="converter" prefix="multimonster/converter" project="" projectLocation="bin/multimonster/converter" used="true"/>
+<folder excludes="jboss-service.xml" includes="" location="bin/multimonster/converter/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/converter/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/converter/interfaces" name="interfaces" prefix="multimonster/converter/interfaces" project="" projectLocation="bin/multimonster/converter/interfaces" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_resourcemanager.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/resourcemanager" name="resourcemanager" prefix="multimonster/resourcemanager" project="" projectLocation="bin/multimonster/resourcemanager" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/resourcemanager/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/resourcemanager/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/resourcemanager/interfaces" name="interfaces" prefix="multimonster/resourcemanager/interfaces" project="" projectLocation="bin/multimonster/resourcemanager/interfaces" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_systemadministration.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/systemadministration" name="systemadministration" prefix="multimonster/systemadministration" project="" projectLocation="bin/multimonster/systemadministration" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/systemadministration/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/systemadministration/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/systemadministration/interfaces" name="interfaces" prefix="multimonster/systemadministration/interfaces" project="" projectLocation="bin/multimonster/systemadministration/interfaces" used="true"/>
+<folder excludes="" includes="**/systemadministration/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_transporter.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/transporter" name="transporter" prefix="multimonster/transporter" project="" projectLocation="bin/multimonster/transporter" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/transporter/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/transporter/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/transporter/interfaces" name="interfaces" prefix="multimonster/transporter/interfaces" project="" projectLocation="bin/multimonster/transporter/interfaces" used="true"/>
+<folder excludes="" includes="**/transporter/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_mediaproxy.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/mediaproxy" name="mediaproxy" prefix="multimonster/mediaproxy" project="" projectLocation="bin/multimonster/mediaproxy" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/mediaproxy/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/mediaproxy/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/mediaproxy/interfaces" name="interfaces" prefix="multimonster/mediaproxy/interfaces" project="" projectLocation="bin/multimonster/mediaproxy/interfaces" used="true"/>
+<folder excludes="" includes="**/mediaproxy/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_mediaaccess.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/mediaaccess" name="mediaaccess" prefix="multimonster/mediaaccess" project="" projectLocation="bin/multimonster/mediaaccess" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/mediaaccess/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/mediaaccess/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/mediaaccess/interfaces" name="interfaces" prefix="multimonster/mediaaccess/interfaces" project="" projectLocation="bin/multimonster/mediaaccess/interfaces" used="true"/>
+<folder excludes="" includes="**/mediadata/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_usermanager.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/usermanager" name="usermanager" prefix="multimonster/usermanager" project="" projectLocation="bin/multimonster/usermanager" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/usermanager/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/usermanager/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/usermanager/interfaces" name="interfaces" prefix="multimonster/usermanager/interfaces" project="" projectLocation="bin/multimonster/usermanager/interfaces" used="true"/>
+<folder excludes="" includes="**/usermanager/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_controller.jar" used="true">
+<folder excludes="" includes="*.class" location="bin/multimonster/controller" name="controller" prefix="multimonster/controller" project="" projectLocation="bin/multimonster/controller" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/controller/META-INF" name="META-INF" prefix="META-INF" project="" projectLocation="bin/multimonster/controller/META-INF" used="true"/>
+<folder excludes="" includes="" location="bin/multimonster/controller/interfaces" name="interfaces" prefix="multimonster/controller/interfaces" project="" projectLocation="bin/multimonster/controller/interfaces" used="true"/>
+<folder excludes="" includes="**/controller/exceptions/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="lib" exploded="false" name="mmonster_plugins.jar" used="true">
+<folder excludes="" includes="**/plugin/*.class" location="bin" name="bin" prefix="" project="" projectLocation="bin" used="true"/>
+</archive>
+<archive destination="" exploded="false" name="mmonster.ear" used="true">
+<file location="lib/mmonster_common.jar" name="mmonster_common.jar" prefix="" project="" projectLocation="lib/mmonster_common.jar" used="true"/>
+<file location="lib/mmonster_controller.jar" name="mmonster_controller.jar" prefix="" project="" projectLocation="lib/mmonster_controller.jar" used="true"/>
+<file location="lib/mmonster_converter.jar" name="mmonster_converter.jar" prefix="" project="" projectLocation="lib/mmonster_converter.jar" used="true"/>
+<file location="lib/mmonster_edit.jar" name="mmonster_edit.jar" prefix="" project="" projectLocation="lib/mmonster_edit.jar" used="true"/>
+<file location="lib/mmonster_exceptions.jar" name="mmonster_exceptions.jar" prefix="" project="" projectLocation="lib/mmonster_exceptions.jar" used="true"/>
+<file location="lib/mmonster_mediaaccess.jar" name="mmonster_mediaaccess.jar" prefix="" project="" projectLocation="lib/mmonster_mediaaccess.jar" used="true"/>
+<file location="lib/mmonster_mediaproxy.jar" name="mmonster_mediaproxy.jar" prefix="" project="" projectLocation="lib/mmonster_mediaproxy.jar" used="true"/>
+<file location="lib/mmonster_plugins.jar" name="mmonster_plugins.jar" prefix="" project="" projectLocation="lib/mmonster_plugins.jar" used="true"/>
+<file location="lib/mmonster_resourcemanager.jar" name="mmonster_resourcemanager.jar" prefix="" project="" projectLocation="lib/mmonster_resourcemanager.jar" used="true"/>
+<file location="lib/mmonster_systemadministration.jar" name="mmonster_systemadministration.jar" prefix="" project="" projectLocation="lib/mmonster_systemadministration.jar" used="true"/>
+<file location="lib/mmonster_transporter.jar" name="mmonster_transporter.jar" prefix="" project="" projectLocation="lib/mmonster_transporter.jar" used="true"/>
+<file location="lib/mmonster_usermanager.jar" name="mmonster_usermanager.jar" prefix="" project="" projectLocation="lib/mmonster_usermanager.jar" used="true"/>
+<file location="application.xml" name="application.xml" prefix="META-INF" project="" projectLocation="application.xml" used="true"/>
+<file location="../mmonster-webfrontend/mmonster_webfrontend.war" name="mmonster_webfrontend.war" prefix="" project="mmonster-webfrontend" projectLocation="mmonster_webfrontend.war" used="true"/>
+</archive>
+</configurations>
