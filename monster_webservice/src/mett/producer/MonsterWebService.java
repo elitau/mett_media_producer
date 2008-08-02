@@ -11,12 +11,6 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
-import javax.management.MBeanServer;
-import javax.management.MBeanServerFactory;
-import javax.management.ObjectName;
-import javax.naming.Context;
-import multimonster.converter.*;
-import multimonster.converter.plugin.jmx.TCProbeCaller;
 
 import org.apache.log4j.Logger;
 
@@ -64,7 +58,7 @@ public class MonsterWebService {
 	@WebMethod
 	public String getMedia( @WebParam(name = "key") String key ){
 		monsterAdapter = getMonsterAdapter();
-		return "Hello " + key + ", my user ID: ";
+		return "Hello " + key + ", my bam ID: " + monsterAdapter.hashCode();
 	}
 	
 	private MonsterAdapter getMonsterAdapter() {
