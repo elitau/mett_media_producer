@@ -7,6 +7,7 @@ package mett.producer;
 //import javax.management.ObjectName;
 
 import java.rmi.RemoteException;
+import java.util.StringTokenizer;
 
 import javax.ejb.CreateException;
 import javax.naming.Context;
@@ -17,9 +18,17 @@ import javax.rmi.PortableRemoteObject;
 //import multimonster.converter.ConverterImplBean;
 //import multimonster.converter.exceptions.ConverterException;
 import multimonster.common.AuthData;
+import multimonster.common.ConnectionAddress;
+import multimonster.common.Format;
+import multimonster.common.FormatId;
+import multimonster.common.OutputOption;
+import multimonster.common.Protocol;
+import multimonster.common.ProtocolId;
 import multimonster.common.SearchCriteria;
 import multimonster.common.SearchResult;
 import multimonster.common.UserIdentifier;
+import multimonster.common.media.MOIdentifier;
+import multimonster.common.media.MediaObject;
 import multimonster.controller.exceptions.ControllerException;
 import multimonster.controller.exceptions.InvalidAuthDataException;
 import multimonster.controller.interfaces.ControllerImpl;
@@ -44,87 +53,65 @@ public class MonsterAdapter {
 	 * ATTRIBUTES
 	 */	
 	private static Logger log = Logger.getLogger(MonsterWebService.class);
-	private static ConverterImplHome monsterConverter = null;
-	private ControllerImplHome controllerHome;
+	private ControllerImplHome monsterControllerHome;
 
 	private MediaProxyImplHome proxyHome;
 	
-	private String httpSessionID;
-	
-	private ControllerImpl controller = null;
+	private ControllerImpl monsterController = null;
 	
 	private String loginName	 = "ede";
 	private String loginPassword = "ede";
-//	private static MBeanServer mBeanServer = null;
-//	private static final String MULTIMONSTER_CONVERTER_JMX_NAME = "multimonster/controller/ControllerFacade || multimonster:service=TCProbeCaller";
+	private Format format = null;
+	private Protocol protocol = null;
 	
-	/*
+	/**
 	 * Constructor
 	 * Instatiates the ConverterImplBean and authenticate the user.
 	 */
 	public MonsterAdapter(){
-//	TODO: get an instance of the ConverterImplBean
 		// initialize
-		if (controllerHome == null) {
+		if (monsterControllerHome == null) {
 			instantiateControllerHome();
 		}
-
-		// wenn kein controller da, dann erzeugen und in Session ablegen:
+		
 		try {
-			controller = controllerHome.create();
+			// wenn kein controller da, dann erzeugen und in Session ablegen:
+			if (monsterController == null) {
+				getMonsterControllerInstance();
+			}
+			
 			if (authenticate()){
 				log.info("Authentication successfull");
 			} else{
 				log.error("Could not authenticate!");
 			}
-
 		} catch (RemoteException e) {
 			log.error("Error calling Controller: " + e.getMessage());
 
-		} catch (CreateException e) {
-			log.error("Error calling Controller: " + e.getMessage());
 		}
-
-
 		
 	}
+	
 	
 	/**
 	 * PUBLIC
 	 */
-	
-//	The JMX name to locate the java bean with the JavabeanContainer.
-
 	public String getMedia(String key, Object metadata_Metadata) {
+		MediaObject mediaObject = null;
+		String mediaURI = null;
 		try {
-			log.info("Getting media for key: " + key);
-			return searchMedia(key);
+			log.info("Searching media for key: " + key);
+			mediaObject = searchMedia(key);
+			if (mediaObject != null) {
+				mediaURI = prepareMediaOutput(mediaObject, null);
+			} else {
+				mediaURI = "Nothing found";
+			}
 		} catch (RemoteException e) {
 			log.error("Error while getting Media");
 			e.printStackTrace();
 		}
-		return null;
-	}
-
-	private static String getMonsterConverterInstance() {
-		throw new UnsupportedOperationException();
-	}
-
-	private String searchMedia(String key) throws RemoteException {
-		SearchResult[] result = null;
-		SearchCriteria searchCriteria = new SearchCriteria();
-		searchCriteria.setTitle(key);
-		try {
-			log.info("Searching for: " + searchCriteria.getTitle());
-			result = controller.search(searchCriteria);
-		} catch (ControllerException e) {
-			log.error("Error during searchMedia()");
-			e.printStackTrace();
-		}
-		return "Found " + ((Integer) result.length).toString() + 
-			   " Media for '" +	key + "'." + 
-			   "\nFirst Media Title: " + result[0].getMediaObject().getMetaData().getTitle();
-		
+		return mediaURI;
 	}
 
 	
@@ -132,13 +119,79 @@ public class MonsterAdapter {
 	/**
 	 * PRIVATE
 	 */
+	
+	/**
+	 * Searches with the given key for MediaObjects. Returns a MediaObject if found, else returns null;
+	 * 
+	 * @param String key - The search criteria
+	 * @return {@link MediaObject} The first MedioObject that fits the search key. 
+	 */
+	private MediaObject searchMedia(String key) throws RemoteException {
+		SearchResult[] result = null;
+		SearchCriteria searchCriteria = new SearchCriteria();
+		searchCriteria.setTitle(key);
+		try {
+			log.info("Searching for: " + searchCriteria.getTitle());
+			result = monsterController.search(searchCriteria);
+			log.info("Found: " + result.length + " results.");
+		} catch (ControllerException e) {
+			log.error("Error during searchMedia()");
+			e.printStackTrace();
+		}
+		
+		if (result.length > 0) {
+			return result[0].getMediaObject();
+		} else{
+			return null;
+		}
+		
+		
+	}
+	
+	/**
+	 * Authenticates and prepares the MediaOpbject for access. 
+	 * Returns an URI to the prepared MediaObject for direct streaming/downloading.
+	 *  
+	 * @param mediaObject  
+	 * @return URI to the given MediaObject
+	 */
+	private String prepareMediaOutput(MediaObject mediaObject, Object metadata) {
+		OutputOption[] outputOptions = null;
+		String uri = null;
+		ConnectionAddress addr = null;
+		OutputOption oo = null;
+		MOIdentifier mOId = mediaObject.getMOId();
+		String mediaTitle = mediaObject.getMetaData().getTitle();
+		
+		try {
+			log.info("Getting OutputOptions for: " + mediaTitle);
+			outputOptions = monsterController.getOutputOptions(mOId);
+			if (outputOptions.length == 0) {
+				return "No OutputOptions for " + mediaTitle + " found";
+			}
+			log.info("Possible OutputOptions("+outputOptions.length+"): " + formatOutputOptions(outputOptions));
+			oo = outputOptions[0];
+			addr = monsterController.prepareOutput(mOId, oo);
+			uri = addr.getUrl().toString();
+		} catch (ControllerException e) {
+			log.error("Controller Exception while getting MediaObejt Identifier:");
+			e.printStackTrace();
+		} catch (RemoteException e) {
+			log.error("Remote Exception while getting MediaObejt Identifier:");
+			e.printStackTrace();
+		}
+		
+		return uri;
+	}
+	
+	
 	private boolean authenticate() throws RemoteException{
 //		TODO: Do not import AuthData
 		UserIdentifier uid = new UserIdentifier(loginName);
 		Boolean loggedIn = false;
 		try {
 			log.info("Trying to log in");
-			loggedIn = controller.login(new AuthData(uid, (loginPassword)));
+			loggedIn = monsterController.login(new AuthData(uid, (loginPassword)));
 		} catch (InvalidAuthDataException e) {
 			log.error("Could not login with: \nName: "+loginName + "Pass: " + loginPassword);
 			e.printStackTrace();
@@ -149,10 +202,16 @@ public class MonsterAdapter {
 		
 		return loggedIn;
 	}
+	
+	private void getMonsterControllerInstance() throws RemoteException{
+		try {
+			monsterController = monsterControllerHome.create();
+		} catch (CreateException e) {
+			log.error("Error calling Controller: " + e.getMessage());
+		}
+	}
 
-	public void instantiateControllerHome() {
-
-		ConverterImplHome converterHome = null;
+	private void instantiateControllerHome() {
 		Context context;
 		
 		log = Logger.getLogger(this.getClass());
@@ -160,11 +219,10 @@ public class MonsterAdapter {
 	
 		try {
 			context = new InitialContext();
-//			title = (String) context.lookup("java:/comp/env/Title");
 	
 			Object ref = context.lookup(ControllerImplHome.JNDI_NAME);
 			log.error("Context lookup successful: "+ context.getNameInNamespace());
-			controllerHome =
+			monsterControllerHome =
 				(ControllerImplHome) PortableRemoteObject.narrow(
 					ref,
 					ControllerImplHome.class);
@@ -183,35 +241,16 @@ public class MonsterAdapter {
 			log.error("Couldn't get Controller: " + e.getMessage());
 			e.printStackTrace();
 		}
-		
-		
-		
-		
-		
-//		try {
-//			/* get ConverterHome */
-//			context = new InitialContext();
-//			
-//			log.error("ConverterImplHome.JNDI_NAME: " + ConverterImplHome.JNDI_NAME);
-//			Object ref = context.lookup(ConverterImplHome.COMP_NAME);
-//			
-//			converterHome =	(ConverterImplHome) PortableRemoteObject.narrow(ref,
-//					ConverterImplHome.class);
-//		} 
-//		catch (Exception e) {
-//			log.error("Error while getting ConverterImplHome: " + e.getMessage() + " StackTrace: \n");
-//			e.printStackTrace();
-//		}
-//		return converterHome;
 	}
 	
-//	static private MBeanServer getMBeanServer() {
-//
-//		if (mBeanServer == null) {
-//			ArrayList mbeanServers = MBeanServerFactory.findMBeanServer(null);
-//			mBeanServer = (MBeanServer) mbeanServers.get(0);
-//		}
-//
-//		return mBeanServer;
-//	}
+	
+//	Helper:
+	private String formatOutputOptions(OutputOption[] options){
+		String output = "hmm";
+		for (int i = 0; i < options.length; i++) {
+			output = output.concat(options[i].toString());
+		}
+		return output;
+	}
+	
 }

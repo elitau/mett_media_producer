@@ -24,5 +24,9 @@ public class OutputOption  implements Serializable{
 	public Protocol getProtocol() {
 		return protocol;
 	}
+	
+	public String toString(){
+		return "Format: " + this.format.getDescription() + " --- ProtocolName: " + this.protocol.getProtocolName(); 
+	}
 
 }
