@@ -58,7 +58,7 @@ public class MonsterWebService {
 	@WebMethod
 	public String getMedia( @WebParam(name = "key") String key ){
 		monsterAdapter = getMonsterAdapter();
-		return "Hello " + key + ", my bam ID: " + monsterAdapter.hashCode();
+		return monsterAdapter.getMedia(key, null);
 	}
 	
 	private MonsterAdapter getMonsterAdapter() {

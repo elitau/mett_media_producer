@@ -6,6 +6,9 @@ package mett.producer;
 //import javax.management.MBeanServerFactory;
 //import javax.management.ObjectName;
 
+import java.rmi.RemoteException;
+
+import javax.ejb.CreateException;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -13,6 +16,12 @@ import javax.rmi.PortableRemoteObject;
 
 //import multimonster.converter.ConverterImplBean;
 //import multimonster.converter.exceptions.ConverterException;
+import multimonster.common.AuthData;
+import multimonster.common.SearchCriteria;
+import multimonster.common.SearchResult;
+import multimonster.common.UserIdentifier;
+import multimonster.controller.exceptions.ControllerException;
+import multimonster.controller.exceptions.InvalidAuthDataException;
 import multimonster.controller.interfaces.ControllerImpl;
 import multimonster.controller.interfaces.ControllerImplHome;
 import multimonster.converter.interfaces.ConverterImplHome;
@@ -43,6 +52,9 @@ public class MonsterAdapter {
 	private String httpSessionID;
 	
 	private ControllerImpl controller = null;
+	
+	private String loginName	 = "ede";
+	private String loginPassword = "ede";
 //	private static MBeanServer mBeanServer = null;
 //	private static final String MULTIMONSTER_CONVERTER_JMX_NAME = "multimonster/controller/ControllerFacade || multimonster:service=TCProbeCaller";
 	
@@ -53,10 +65,28 @@ public class MonsterAdapter {
 	public MonsterAdapter(){
 //	TODO: get an instance of the ConverterImplBean
 		// initialize
-		if (monsterConverter == null) {
-			monsterConverter = getConverterHome();
+		if (controllerHome == null) {
+			instantiateControllerHome();
 		}
-//	TODO: authenticate
+
+		// wenn kein controller da, dann erzeugen und in Session ablegen:
+		try {
+			controller = controllerHome.create();
+			if (authenticate()){
+				log.info("Authentication successfull");
+			} else{
+				log.error("Could not authenticate!");
+			}
+
+		} catch (RemoteException e) {
+			log.error("Error calling Controller: " + e.getMessage());
+
+		} catch (CreateException e) {
+			log.error("Error calling Controller: " + e.getMessage());
+		}
+
+
+		
 	}
 	
 	/**
@@ -65,16 +95,36 @@ public class MonsterAdapter {
 	
 //	The JMX name to locate the java bean with the JavabeanContainer.
 
-	public void getMedia(Object key_String, Object metadata_Metadata) {
-		throw new UnsupportedOperationException();
+	public String getMedia(String key, Object metadata_Metadata) {
+		try {
+			log.info("Getting media for key: " + key);
+			return searchMedia(key);
+		} catch (RemoteException e) {
+			log.error("Error while getting Media");
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	private static String getMonsterConverterInstance() {
 		throw new UnsupportedOperationException();
 	}
 
-	private void searchMedia_key_String_() {
-		throw new UnsupportedOperationException();
+	private String searchMedia(String key) throws RemoteException {
+		SearchResult[] result = null;
+		SearchCriteria searchCriteria = new SearchCriteria();
+		searchCriteria.setTitle(key);
+		try {
+			log.info("Searching for: " + searchCriteria.getTitle());
+			result = controller.search(searchCriteria);
+		} catch (ControllerException e) {
+			log.error("Error during searchMedia()");
+			e.printStackTrace();
+		}
+		return "Found " + ((Integer) result.length).toString() + 
+			   " Media for '" +	key + "'." + 
+			   "\nFirst Media Title: " + result[0].getMediaObject().getMetaData().getTitle();
+		
 	}
 
 	
@@ -82,11 +132,25 @@ public class MonsterAdapter {
 	/**
 	 * PRIVATE
 	 */
-	private boolean authenticate() {
-		throw new UnsupportedOperationException();
+	private boolean authenticate() throws RemoteException{
+//		TODO: Do not import AuthData
+		UserIdentifier uid = new UserIdentifier(loginName);
+		Boolean loggedIn = false;
+		try {
+			log.info("Trying to log in");
+			loggedIn = controller.login(new AuthData(uid, (loginPassword)));
+		} catch (InvalidAuthDataException e) {
+			log.error("Could not login with: \nName: "+loginName + "Pass: " + loginPassword);
+			e.printStackTrace();
+		} catch (ControllerException e) {
+			log.error("ControllerException with: ");
+			e.printStackTrace();
+		}
+		
+		return loggedIn;
 	}
 
-	public ConverterImplHome getConverterHome() {
+	public void instantiateControllerHome() {
 
 		ConverterImplHome converterHome = null;
 		Context context;
@@ -124,21 +188,21 @@ public class MonsterAdapter {
 		
 		
 		
-		try {
-			/* get ConverterHome */
-			context = new InitialContext();
-			
-			log.error("ConverterImplHome.JNDI_NAME: " + ConverterImplHome.JNDI_NAME);
-			Object ref = context.lookup(ConverterImplHome.COMP_NAME);
-			
-			converterHome =	(ConverterImplHome) PortableRemoteObject.narrow(ref,
-					ConverterImplHome.class);
-		} 
-		catch (Exception e) {
-			log.error("Error while getting ConverterImplHome: " + e.getMessage() + " StackTrace: \n");
-			e.printStackTrace();
-		}
-		return converterHome;
+//		try {
+//			/* get ConverterHome */
+//			context = new InitialContext();
+//			
+//			log.error("ConverterImplHome.JNDI_NAME: " + ConverterImplHome.JNDI_NAME);
+//			Object ref = context.lookup(ConverterImplHome.COMP_NAME);
+//			
+//			converterHome =	(ConverterImplHome) PortableRemoteObject.narrow(ref,
+//					ConverterImplHome.class);
+//		} 
+//		catch (Exception e) {
+//			log.error("Error while getting ConverterImplHome: " + e.getMessage() + " StackTrace: \n");
+//			e.printStackTrace();
+//		}
+//		return converterHome;
 	}
 	
 //	static private MBeanServer getMBeanServer() {
